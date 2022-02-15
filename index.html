@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website</title>
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <body>
+    <nav class="container">
+        <ul>
+          <li> <a href="">LOGIN</a> </li>
+          <li> <a href="">HELP</a> </li>
+        </ul>
+        <div><button>Search</button><input type="text" placeholder="Search.."></div>
+        <h1><a class="logo" href="index.html">Micro<span>Blog</span></a></h1>
+    </nav>
+    
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img class="slider-image" src="img/Vietnam.jpg" style="width:100%">
+          <div class="text">Vietnam to lift Covid-19 restrictions on international flights</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img class="slider-image" src="img/syria.jpg" style="width:100%">
+          <div class="text">Six killed in Syria regime shelling on Idlib</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img class="slider-image" src="img/japan.jpg" style="width:100%">
+          <div class="text">Japan recovers second body from crashed F-15</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            }
+        </script>
+        
+        
+    </div>
+    
+    <!----ARTICLE COLUMN-->
+    <div id="article" class="col-lg-3">
+      <!----ARTICLE SECTION-->
+      <div class="row exc">
+        <div id="img-e" class="col-lg-6"><h6>EXCLUSIVE</h6></div>
+        <div id="info-e" class="col-lg-6">
+          <span>Tuesday 8th, February 2022</span>
+          <h5>Strike</h5>
+          <p>Former national president of the students’ body, Bamidele Danielson, urged lecturers to shelve the proposed strike in the interest of students.</p>
+          <a href="#">Read more > </a>
+        </div>
+      </div>
+      <div class="border-h"> <h3>LATEST NEWS</h3></div>
+      <div class="row article-t">
+        <div class="col-lg-6">
+          <span>Tuesday 8th, February 2022</span>
+          <h5>NIGERIA</h5>
+          <img src="img/nig.jpg" alt="">
+          <p> Afenifere backs Akeredolu, insists power must shift to South in 2023.</p></div>
+        <div class="col-lg-6">
+          <span>Tuesday 8th, February 2022</span>
+          <h5>BUSINESS NEWS</h5>
+          <img src="img/bis.jpg" alt="">
+          <p> CBN to end FX supply to banks, targets $200bn from non-oil export</p>
+        </div>
+      </div>
+      <div class="row article-t">
+        <div class="col-lg-6">
+          <span>Tuesday 8th, February 2022</span>
+          <h5>SPORT</h5>
+          <img src="img/sport.jpg" alt="">
+          <p> Eagles move to third as Lions, Scorpions rise in FIFA ranking.</p></div>
+        <div class="col-lg-6">
+          <span>Tuesday 8th, February 2022</span>
+          <h5>WORLD</h5>
+          <img src="img/world.jpg" alt="">
+          <p> Macron kept at distance from Putin after refusing Covid test.</p>
+        </div>
+      </div>
+    <!----EMPLOYEE SECTION-->
+      <div id="employee">
+        <div class="row">
+          <a class="col-lg-5"><h6>EMPLOYEES YOU FOLLOW </h6></a>
+          <a class="col-lg-3"><h6>ALL EMPLOYEES </h6></a>
+          <a class="col-lg-4"><h6> SEARCH EMPLOYEES </h6></a>
+        </div>
+      </div>
+      <div>
+        <div id="emp" class="row">
+          <img class="emp" src="img/egbon.jpg" alt="">
+          <img class="emp" src="img/egbon.jpg" alt="">
+          <img class="emp" src="img/egbon.jpg" alt="">
+          <img class="emp" src="img/egbon.jpg" alt="">
+          <img class="emp" src="img/egbon.jpg" alt="">
+          <img class="emp" src="img/egbon.jpg" alt="">
+          
+         
+      </div></div>
+ 
+      </div>
+      <!----3RD COLUMN-->
+      <!----PROJECT SECTION-->
+      <div id="project" class="col-lg-3">
+        <div class="border-h"><p>VIEW ALL</p><h3>FEATURED PROJECTS</h3></div>
+        <div class="row">
+          <div id="image-p" class="col-lg-4"><img src="img/internet.jpg" alt=""></div>
+          <section class="col-lg-8"><h6>INTERNET</h6>
+          <p>Absa sees economic growth opportunity in Nigeria’s 5G policy.</p></section>
+        </div>
+        <div class="row">
+          <div id="image-p" class="col-lg-4"><img src="img/stock.jpg" alt=""></div>
+          <section class="col-lg-8"><h6>STOCK MARKET</h6>
+            <p>Global stocks sink on US inflation surge.</p></section>
+        </div>
+        <div class="row">
+          <div id="image-p" class="col-lg-4"><img src="img/politics.jpeg" alt=""></div>
+          <section class="col-lg-8"><h6>POLIITICS</h6>
+            <p>Akwa Ibom Government cautions traditional rulers against igniting crisis.</p></section>
+        </div>
+            <div style="text-align:center">
+               <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+       
+        <div class="border-h"><p>VIEW ALL</p><h3>NEWEST DOCUMENTS</h3></div>
+ 
+<!----DOC SECTION-->
+        <section id="doc" class="container">
+        <div class="row">
+          <div class="col-lg-3 d">
+            <img src="img/folder.png" alt="">
+            <span>Document<br>Name</span>
+          </div>
+          <div class="col-lg-3 d">
+            <img src="img/folder.png" alt="">
+            <span>Document<br>Name</span>
+          </div>
+          <div class="col-lg-3 d">
+            <img src="img/folder.png" alt="">
+            <span>Document<br>Name</span>
+          </div>
+          <div class="col-lg-3 d">
+            <img src="img/folder.png" alt="">
+            <span>Document<br>Name</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 d">
+            <img src="img/folder.png" alt="">
+            <span>Document<br>Name</span>
+          </div>
+          <div class="col-lg-3 d">
+            <img src="img/folder.png" alt="">
+            <span>Document<br>Name</span>
+          </div>
+          <div class="col-lg-3 d">
+            <img src="img/folder.png" alt="">
+            <span>Document<br>Name</span>
+          </div>
+          <div class="col-lg-3 d">
+            <img src="img/folder.png" alt="">
+            <span>Document<br>Name</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 d">
+            <img src="img/folder.png" alt="">
+            <span>Document<br>Name</span>
+          </div>
+          <div class="col-lg-3 d">
+            <img src="img/folder.png" alt="">
+            <span>Document<br>Name</span>
+          </div>
+          <div class="col-lg-3 d">
+            <img src="img/folder.png" alt="">
+            <span>Document<br>Name</span>
+          </div>
+          <div class="col-lg-3 d">
+            <img src="img/folder.png" alt="">
+            <span>Document<br>Name</span>
+          </div>
+        </div>
+      </section>
+      <!----VIDEO SECTION-->
+        <div id="bv" class="border-h"> <p>VIEW ALL</p> <h3>FEATURED VIDEOS</h3></div>
+          <div>
+          <video controls>
+            <source src="#" type="video/mp4">
+          </video></div>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+      </div>
+    </div>
+    
+ 
+    <!----FOOTER SECTION-->
+    
+  
+    <footer><h6>&copy Mike 2022. All Rights Reserved</h6></footer>
+        
+  </body>
+</html>
+
+
+
